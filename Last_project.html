@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Invite Card </title>
+<style type="text/css">
+* {
+    box-sizing: border-box;
+}
+.header {
+	color: green;
+	background-color: rgb(141, 251, 141);
+	text-align: center;
+	padding: 15px;
+	margin: 15px;
+}
+.program{
+	width: 60%;
+	float: left;
+}
+.information{
+	width: 40%;
+	float: left;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/*desktop version*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 800px) {
+/* mobile phones */
+[class*="col-m-"]
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+}
+
+</style>
+</head>
+<body style="background-color: rgb(255, 99, 71);">
+<script type="text/javascript">
+function click1()
+{
+	document.getElementById("demo1").innerHTML = "Have a Cake";
+}
+function click2()
+{
+	document.getElementById("demo2").innerHTML = "Play game"; 
+}
+function click3()
+{
+	document.getElementById("demo3").innerHTML = "Give a gift"; 
+}
+function but1(){
+	alert("My Home");
+}
+function but2(){
+	alert("12/24 PM 9 :00");
+}
+function but3(){
+	alert("Gift");
+}
+</script>
+
+<div class="header col-12 col-m-12">
+<h1> Invite you Christmas party </h1>
+</div>
+<div class="program">
+<div class="col-5 col-m-12">
+<h2 style="color: rgb(0, 227, 0); margin: 15px; font-size: 50px; padding: 10px; background-color: rgb(255, 111, 0)"> Let's play </h2>
+</div>
+<div class="col-8 col-m-12">
+	<p onclick="click1()" id="demo1" style="font-size: 25px; color: rgb(0, 227, 0); background-color: rgb(255, 111, 0)"> Click Me! </p>
+	<p onclick="click2()" id="demo2" style="font-size: 25px; color: rgb(0, 227, 0); background-color: rgb(255, 111, 0)"> Click Me! </p>
+	<p onclick="click3()" id="demo3" style="font-size: 25px; color: rgb(0, 227, 0); background-color: rgb(255, 111, 0)"> Click Me! </p>
+</div>
+</div>
+<div class="col=7 col-m-12 information">
+	<h2 style="background-color: rgb(64, 255, 255); color: rgb(0, 227, 0); margin: 15px; font-size: 50px; padding: 10px;"> Information </h2>
+	<button onclick="but1()" style="font-size: 20px;"> Where? </button>
+	<button onclick="but2()" style="font-size: 20px;"> When? </button>
+	<button onclick="but3()" style="font-size: 20px;"> Prepare </button>
+</div>
+</body>
+</html>
